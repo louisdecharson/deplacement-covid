@@ -138,7 +138,7 @@ async function generatePdf (profile, reasons) {
     if (reasons.includes('missions')) {
         drawText('x', 76, 260, 19);
     }
-    let locationSize = idealFontSize(font, profile.ville, 83, 7, 11);
+    let locationSize = idealFontSize(font, ville, 83, 7, 11);
 
     if (!locationSize) {
         alert(
@@ -147,7 +147,41 @@ async function generatePdf (profile, reasons) {
         );
         locationSize = 7;
     }
-    drawText(profile.ville, 111, 226, locationSize);
+    drawText(ville, 111, 226, locationSize);
+    if (reasons !== '') {
+        // Date sortie
+        drawText(`${date_sortie}`, 92, 200);
+        drawText(releaseHours, 200, 201);
+        drawText(releaseMinutes, 220, 201);
+    }
+
+    // Date création
+    drawText('Date de création:', 464, 150, 7);
+    drawText(`${creationDate} à ${creationHour}`, 455, 144, 7);
+
+    const generatedQR = await generateQR(data);
+
+    const qrImage = await pdfDoc.embedPng(generatedQR);
+
+    page1.drawImage(qrImage, {
+        x: page1.getWidth() - 170,
+        y: 155,
+        width: 100,
+        height: 100,
+    });
+
+    pdfDoc.addPage()
+    const page2 = pdfDoc.getPages()[1];
+    page2.drawImage(qrImage, {
+        x: 50,
+        y: page2.getHeight() - 350,
+        width: 300,
+        height: 300,
+    });
+
+    const pdfBytes = await pdfDoc.save();
+
+    return new Blob([pdfBytes], { type: 'application/pdf' });
 }
 
 
