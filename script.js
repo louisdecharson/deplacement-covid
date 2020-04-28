@@ -17,11 +17,16 @@ function changeLangue(langue) {
             champ.innerHTML = traductionChamp;
         }
     }
+    localStorage.setItem('langue', langue);
     
 }
 for (const el of document.getElementsByClassName('langue')) {
     el.addEventListener('click', () => changeLangue(el.id));
 }
+if (localStorage.getItem('langue')) {
+    changeLangue(localStorage.getItem('langue'));
+}
+
 
 // Formattage Date
 function pad (str) {
