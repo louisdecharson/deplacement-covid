@@ -89,6 +89,36 @@ const langues = {
         "date_sortie-label": "Fecha de salida",
         "heure_sortie-label": "Hora de salida",
         "generer-attestation": "Generar certificados"
-    }
+    },
+    "pt": {
+        "pourquoi": "Preencho esta declaração cada vez que saio de casa para cumprir a lei durante o coronavírus.",
+        "choix-langue": "Escolha o idioma",
+        "texte-champs-obligatoires": "Todos os campos são obrigatórios",
+        "prenom-label": "Nome",
+        "prenom": "Nome",
+        "nom-label": "Apelido",
+        "nom": "Apelido",
+        "date_naissance-label": "Data de nascimento",
+        "date_naissance": "Data de nascimento",
+        "lieu_naissance-label": "Local de nascimento",
+        "lieu_naissance": "Local de nascimento",
+        "adresse-label": "Morada",
+        "adresse": "Morada",
+        "ville-label": "Localidade",
+        "ville": "Localidade",
+        "code_postal-label": "Código postal",
+        "code_postal": "Código postal",
+        "titre_motifs": "Selecione o(s) motivo(s) da saída / Eu saio para:",
+        "texte-travail": "Ir trabalhar",
+        "texte-courses": "Ir às compras",
+        "texte-sante": "Ir ao médico ou à farmácia",
+        "texte-famille": "Prestar assistência a uma pessoa que necessita",
+        "texte-sport": "Sair por pouco tempo perto de minha casa; passear o cão",
+        "texte-judiciaire": "Convocatória administrativa ou judicial",
+        "texte-missions": "Participar em missões de interesse geral por ordem de autoridade administrativa",
+        "date_sortie-label": "Data da saída",
+        "heure_sortie-label": "Hora da saída",
+        "generer-attestation": "Gerar declaração"
+    } 
     
 };
