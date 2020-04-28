@@ -86,12 +86,20 @@ h1 {
 }
 a.bouton {
     text-decoration: none;
-    background-color: var(--accent-2);
     color: var(--color-bg);
     border-radius: 15px;
-    border: 1px solid var(--accent-2);
-    padding: 0.2em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
     margin-left: 0.5em;
+}
+.bouton-accent1 {
+    background-color: var(--accent-1);
+    border: 1px solid var(--accent-1);
+
+}
+.bouton-accent2 {
+    background-color: var(--accent-2);
+    border: 1px solid var(--accent-2);
+
 }
 .bouton-bascule {
     display: inline-block;
