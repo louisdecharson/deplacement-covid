@@ -100,7 +100,7 @@ async function generatePdf (profile, reasons) {
       `Motifs: ${reasons}`,
   ].join('; ');
 
-    const existingPdfBytes = await fetch('./certificate.pdf').then((res) => res.arrayBuffer());
+    const existingPdfBytes = await fetch('./certificate.pdf').then((res) => res.arrayBuffer())
 
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const page1 = pdfDoc.getPages()[0];

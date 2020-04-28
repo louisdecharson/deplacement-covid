@@ -20,7 +20,7 @@ const langues = {
         "titre_motifs": "Choisissez le ou les motifs de sortie / Je sors pour:",
         "texte-travail": "Aller travailler",
         "texte-courses": "Acheter à manger.",
-        "texte-sante": "Aller chez le docteur ou à la pharmacie.",
+        "texte-sante": "Aller chez le docteur ou à la pharmacie",
         "texte-famille": "M’occuper d’une personne qui a besoin de moi.",
         "texte-sport": "Sortir peu de temps pas loin de chez moi. Sortir mon chien.",
         "texte-judiciaire": "Convocation administrative ou judiciaire.",

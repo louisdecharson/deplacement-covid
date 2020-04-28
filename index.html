@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="./main.css">
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./main.css">
+        <title>Générateur Attestation Covid (unofficial)</title>
     </head>
     <body>
         <div class="conteneur-formulaire">
@@ -11,15 +12,15 @@
                 <h1>
                     <span id="titre-covid">COVID-19</span><span id="titre">ATTESTATION</span>
                 </h1>
-                <p class="texte-aide texte" id="pourquoi">Je remplis cette attestation à chaque fois que je sors. C'est la loi pour le coronavirus.</p>
+                <p class="texte-aide texte" id="pourquoi">📝 Je remplis cette attestation à chaque fois que je sors. C'est la loi pour le coronavirus.</p>
 
                 <div class="conteneur-langues">
                     <div class="texte-aide texte" id="choix-langue">
                         Choix de la langue
                     </div>
                     <div class="bouton-bascule">
-                        <a id="fr" class="langue actif" value="fr">Français</a>
-                        <a id="en" class="langue" value="en">English</a>
+                        <a id="fr" class="langue actif" value="fr">Français 🇫🇷</a>
+                        <a id="en" class="langue" value="en">English 🇬🇧</a>
                         <!-- <a id="es" class="langue" value="es">Español</a>
                              <a id="ch" class="langue" value="ch">Chinese</a>
                              <a id="ar" class="langue" value="ar">Arabic</a> -->
@@ -29,69 +30,119 @@
                 <p id="texte-champs-obligatoires" class="texte">Tous les champs sont obligatoires</p>
 
                 <div id="champs-profil">
-                    <label id="prenom-label" class="texte" for="prenom">Prénom</label>
+                    <label for="prenom">
+                        <span>🆔</span>
+                        <span id="prenom-label" class="texte">Prénom</span>
+                    </label>
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom"/>
-                    <label id="nom-label" class="texte" for="nom">Nom</label>
+
+                    <label for="nom">
+                        <span>🆔</span>
+                        <span id="nom-label" class="texte">Nom</span>
+                    </label>
                     <input type="text" id="nom" name="nom" placeholder="Nom"/>
 
-                    <label id="date_naissance-label" class="texte" for="date_naissance">Date de naissance</label>
+                    <label for="date_naissance">
+                        <span>🎂📅</span>
+                        <span id="date_naissance-label"  class="texte">Date de naissance</span>
+                    </label>
                     <input type="date" id="date_naissance" name="date_naissance" placeholder="dd/mm/yyyy"/>
-                    <label id="lieu_naissance-label" class="texte" for="lieu_naissance">Lieu de naissance</label>
+
+                    <label for="lieu_naissance">
+                        <span>🎂🏙</span>
+                        <span class="texte" id="lieu_naissance-label">Lieu de naissance</span>
+                    </label>
                     <input type="text" id="lieu_naissance" name="lieu_naissance" placeholder="Lieu de naissance"/>
 
-                    <label id="adresse-label" class="texte" for="adresse">Adresse</label>
+                    <label for="adresse">
+                        <span>📮🏡</span>
+                        <span id="adresse-label" class="texte">Adresse</span>
+                    </label>
                     <input type="address" id="adresse" name="adresse" placeholder="Adresse"/>
 
-                    <label id="ville-label" class="texte" for="ville">Ville</label>
+                    <label for="ville">
+                        <span>📮🏙</span>
+                        <span id="ville-label" class="texte">Ville</span>
+                    </label>
                     <input type="text" id="ville" name="ville" placeholder="Ville"/>
-                    <label id="code_postal-label" class="texte" for="code_postal">Code postal</label>
-                    <input type="text" id="code_postal" name="code_postal">
+
+                    <label for="code_postal">
+                        <span>📮🔢</span>
+                        <span id="code_postal-label" class="texte">Code postal</span>
+                    </label>
+                    <input type="text" id="code_postal" name="code_postal" placeholder="Code postal">
+
                     <fieldset>
                         <h4 id="titre_motifs" class="texte">Choisissez le ou les motifs de sortie / Je sors pour: </h4>
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-travail" value="travail">
-                            <label id="texte-travail" class="texte" for="checkbox-travail">Aller travailler</label>
+                            <label for="checkbox-travail">
+                                <span>👷👩‍⚕️</span>
+                                <span id="texte-travail" class="texte" >Aller travailler</span>
+                            </label>
                             <!-- <label id="texte-travail" class="texte" for="checkbox-travail">Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu'ils sont indispensables à l'exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.</label> -->
                         </div>
 
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-courses" value="courses">
-                            <label id="texte-courses" class="texte" for="checkbox-courses">Acheter à manger</label>
+                            <label for="checkbox-courses">
+                                <span>🥑🛒</span>
+                                <span id="texte-courses" class="texte">Acheter à manger</span>
+                            </label>
                             <!-- <label id="texte-courses" class="texte" for="checkbox-courses">Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité dans des établissements dont les activités demeurent autorisées (<a href="https://www.service-public.fr/particuliers/actualites/A13921">liste des commerces et établissements qui restent ouverts</a>).</label> -->
                         </div>
 
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-sante" value="sante">
-                            <label id="texte-sante" class="texte" for="checkbox-sante">Pour aller chez le docteur. Pour aller à la pharmacie.
-                                <!-- <label id="texte-sante" class="texte" for="checkbox-sante">Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.</label> -->
+                            <label for="checkbox-sante">
+                                <span>🏥💊</span>
+                                <span id="texte-sante" class="texte">Pour aller chez le docteur. Pour aller à la pharmacie.</span>
+                            </label>
+                            <!-- <label id="texte-sante" class="texte" for="checkbox-sante">Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.</label> -->
                         </div>
 
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-famille" value="famille">
-                            <label id="texte-famille" class="texte" for="checkbox-famille">Pour m’occuper d’une personne qui a besoin de moi.</label>
+                            <label for="checkbox-famille">
+                                <span>👶🧓</span>
+                                <span id="texte-famille" class="texte">Pour m’occuper d’une personne qui a besoin de moi.</span>
+                            </label>
                             <!-- <label id="texte-famille" class="texte" for="checkbox-famille">Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.</label> -->
                         </div>
 
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-sport" value="sport">
-                            <label id="texte-sport" class="texte" for="checkbox-sport">Pour sortir peu de temps pas loin de chez moi. Pour sortir mon chien.
+                            <label for="checkbox-sport">
+                                <span>🏃‍♀️🐶</span>
+                                <span id="texte-sport" class="texte">Pour sortir peu de temps pas loin de chez moi. Pour sortir mon chien.</span>
                             </label>
                             <!-- <label id="texte-sport" class="texte" for="checkbox-sport">Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label> -->
                         </div>
                         
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-judiciaire" value="judiciaire">
-                            <label id="texte-judiciaire" class="texte" for="checkbox-judiciaire">Convocation judiciaire ou administrative.</label>
+                            <label for="checkbox-judiciaire">
+                                <span>🧑‍⚖️👮‍♀️</span>
+                                <span id="texte-judiciaire" class="texte">Convocation judiciaire ou administrative.</span></label>
                         </div>
                         <div class="section">
                             <input type="checkbox" name="motif" id="checkbox-missions" value="missions">
-                            <label id="texte-missions" class="texte" for="checkbox-missions">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</label>
+                            <label for="checkbox-missions">
+                                <span>🧑‍🚒</span>
+                                <span id="texte-missions" class="texte">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</span>
+                            </label>
                         </div>
                     </fieldset>
 
-                    <label id="date_sortie-label" for="date_sortie" class="texte">Date de sortie</label>
+                    <label for="date_sortie">
+                        <span id="date_sortie-label" class="texte">📅</span>
+                        <span>Date de sortie</span></label>
                     <input type="date" id="date_sortie" name="date_sortie" placeholder="dd/mm/yyyy"/>
-                    <label id="heure_sortie-label" for="date_sortie" class="texte">Heure de sortie</label>
+                    
+                    <label for="date_sortie">
+                        <span>🕰</span>
+                        <span id="heure_sortie-label" class="texte">Heure de sortie</span>
+                    </label>
                     <input type="time" id="heure_sortie" name="heure_sortie"/>
 
                 </div>

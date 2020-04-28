@@ -24,7 +24,7 @@ body {
     margin-top: 1rem;
 }
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 #titre-covid {
@@ -47,25 +47,6 @@ h1 {
 .conteneur-formulaire {
     margin: 30px auto;
     max-width: 600px;
-}
-form .section {
-    display: table;
-    vertical-align: baseline;
-}
-input[type="checkbox"] {
-    display: inline;
-    margin-top: -.25rem;
-    margin-right: .5rem;
-    width: auto;
-}
-
-input[type="checkbox"] + label{
-    display: table-cell;
-    text-align: left;
-    vertical-align: baseline;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    font-weight: normal;
 }
 
 .conteneur-langues > .texte-aide {
@@ -163,4 +144,29 @@ textarea[readonly] {
 label {
     font-weight: bold;
     margin-bottom: 0.2rem;
+}
+form .section {
+    display: table;
+    vertical-align: baseline;
+}
+input[type="checkbox"] {
+    display: inline;
+    margin-top: -.25rem;
+    margin-right: .5rem;
+    width: auto;
+}
+
+input[type="checkbox"] + label{
+    display: table-cell;
+    text-align: left;
+    vertical-align: baseline;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-weight: normal;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+     border: 0px solid var(--color-bg-secondary);
+    
 }
