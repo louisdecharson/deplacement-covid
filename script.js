@@ -1,4 +1,5 @@
-import {PDFDocument, StandardFonts} from 'pdf-lib';
+const {PDFDocument, StandardFonts} = PDFLib;
+const QRCode = qrcode;
 
 const $ = (...args) => document.querySelector(...args);
 const $$ = (...args) => [...document.querySelectorAll(...args)];
