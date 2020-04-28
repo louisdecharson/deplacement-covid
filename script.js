@@ -117,28 +117,28 @@ async function generatePdf (profile, reasons) {
     drawText(lieu_naissance, 92, 638);
     drawText(`${adresse} ${code_postal} ${ville}`, 134, 613);
 
-  if (reasons.includes('travail')) {
-      drawText('x', 76, 527, 19);
-  }
+    if (reasons.includes('travail')) {
+        drawText('x', 76, 527, 19);
+    }
     if (reasons.includes('courses')) {
         drawText('x', 76, 478, 19);
-  }
+    }
     if (reasons.includes('sante')) {
         drawText('x', 76, 436, 19);
-  }
+    }
     if (reasons.includes('famille')) {
         drawText('x', 76, 400, 19);
-  }
+    }
     if (reasons.includes('sport')) {
         drawText('x', 76, 345, 19);
-  }
+    }
     if (reasons.includes('judiciaire')) {
         drawText('x', 76, 298, 19);
     }
     if (reasons.includes('missions')) {
         drawText('x', 76, 260, 19);
     }
-    let locationSize = idealFontSize(font, profile.town, 83, 7, 11);
+    let locationSize = idealFontSize(font, profile.ville, 83, 7, 11);
 
     if (!locationSize) {
         alert(
@@ -147,7 +147,7 @@ async function generatePdf (profile, reasons) {
         );
         locationSize = 7;
     }
-    drawText(profile.town, 111, 226, locationSize);
+    drawText(profile.ville, 111, 226, locationSize);
 }
 
 
