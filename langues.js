@@ -59,6 +59,36 @@ const langues = {
         "date_sortie-label": "Date",
         "heure_sortie-label": "Hour",
         "generer-attestation": "Generate certificate"
+    },
+    "es": {
+        "pourquoi": "Relleno esto cada vez que salgo. Es la ley para el coronavirus",
+        "choix-langue": "Elija el idioma",
+        "texte-champs-obligatoires": "Todos los campos son obligatorios",
+        "prenom-label": "Nombre",
+        "prenom": "Nombre",
+        "nom-label": "Apellido",
+        "nom": "Apellido",
+        "date_naissance-label": "Fecha de nacimiento",
+        "date_naissance": "Fecha de nacimiento",
+        "lieu_naissance-label": "Lugar de nacimiento",
+        "lieu_naissance": "Lugar de nacimiento",
+        "adresse-label": "Domicilio",
+        "adresse": "Domicilio",
+        "ville-label": "Ciudad",
+        "ville": "Ciudad",
+        "code_postal-label": "Código postal",
+        "code_postal": "Código postal",
+        "titre_motifs": "Elija la(s) razón(es) por la(s) que voy a salir:",
+        "texte-travail": "Ve a trabajar.",
+        "texte-courses": "Comprar algo de comida",
+        "texte-sante": "Ir a la farmacia o al médico",
+        "texte-famille": "Cuidar de alguien que me necesita.",
+        "texte-sport": "Salir por un corto tiempo no muy lejos de mi casa. Sacando a mi perro.",
+        "texte-judiciaire": "Citación administrativa o judicial.",
+        "texte-missions": "Participar en misiones de interés general a petición de la autoridad administrativa.",
+        "date_sortie-label": "Fecha de salida",
+        "heure_sortie-label": "Hora de salida",
+        "generer-attestation": "Generar certificados"
     }
     
 };

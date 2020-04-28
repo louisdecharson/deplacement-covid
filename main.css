@@ -23,9 +23,27 @@ body {
     margin-right: auto;
     margin-top: 1rem;
 }
+footer {
+    margin: 1rem;
+    font-size: 0.8rem;
+}
 h1 {
     font-size: 1.4rem;
     font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    body {
+        margin-top: 0.1rem !important;
+    }
+    h1 > span {
+        flex-grow: 1;
+    }
+    .conteneur-formulaire {
+        margin: 0px auto !important;
+    }
+
 }
 #titre-covid {
     background-color: var(--accent-1);
@@ -41,8 +59,20 @@ h1 {
 }
 .texte-aide {
     font-style: italic;
-    color: var(--color-text-secondary);
-                    
+    color: var(--color-text-secondary);                    
+}
+.texte-aide > a {
+    line-height: 1.4em;
+    color: inherit;
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    text-decoration: none;        
+}
+.texte-aide > a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #606870;
+    border-color: #606870;
 }
 .conteneur-formulaire {
     margin: 30px auto;
@@ -52,8 +82,17 @@ h1 {
 .conteneur-langues > .texte-aide {
     display: inline-block;
     margin-right: 1em;
+    margin-bottom: 0.2em;
 }
-
+a.bouton {
+    text-decoration: none;
+    background-color: var(--accent-2);
+    color: var(--color-bg);
+    border-radius: 15px;
+    border: 1px solid var(--accent-2);
+    padding: 0.2em;
+    margin-left: 0.5em;
+}
 .bouton-bascule {
     display: inline-block;
     padding: 2px;

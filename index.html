@@ -2,8 +2,21 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Générateur Attestation Covid" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://louisdecharson.github.io/deplacement-covid/" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@louisdecharson">
+        <meta name="twitter:creator" content="@louisdecharson">
+        <meta name="twitter:title" content="Générateur Attestation Covid">
+        <meta name="twitter:description" content="Générateur d'attestation de déplacement COVID multi-langues non-officiel.">
+
+        
         <link rel="stylesheet" href="./main.css">
-        <title>Générateur Attestation Covid (unofficial)</title>
+        <title>Générateur Attestation Covid (non-officiel)</title>
     </head>
     <body>
         <div class="conteneur-formulaire">
@@ -12,7 +25,6 @@
                 <h1>
                     <span id="titre-covid">COVID-19</span><span id="titre">ATTESTATION</span>
                 </h1>
-                <p class="texte-aide texte" id="pourquoi">📝 Je remplis cette attestation à chaque fois que je sors. C'est la loi pour le coronavirus.</p>
 
                 <div class="conteneur-langues">
                     <div class="texte-aide texte" id="choix-langue">
@@ -21,12 +33,14 @@
                     <div class="bouton-bascule">
                         <a id="fr" class="langue actif" value="fr">Français 🇫🇷</a>
                         <a id="en" class="langue" value="en">English 🇬🇧</a>
-                        <!-- <a id="es" class="langue" value="es">Español</a>
-                             <a id="ch" class="langue" value="ch">Chinese</a>
-                             <a id="ar" class="langue" value="ar">Arabic</a> -->
+                        <a id="es" class="langue" value="es">Español 🇪🇸</a>
+                        <!-- <a id="ar" class="langue" value="ar">Arabic 🇸🇦</a> -->
                     </div>
                 </div>
+
                 
+                <p class="texte-aide texte" id="pourquoi">📝 Je remplis cette attestation à chaque fois que je sors. C'est la loi pour le coronavirus.</p>
+
                 <p id="texte-champs-obligatoires" class="texte">Tous les champs sont obligatoires</p>
 
                 <div id="champs-profil">
@@ -153,6 +167,11 @@
         <script src="./qrcode.min.js"></script>
         <script src="./langues.js"></script>
         <script src="./script.js"></script>
+        <footer>
+            <hr/>
+            <p class="texte-aide">Créé par <a href="https://louisdecharson.github.io/">@louisdecharson</a> à partir du code développé par <a href="https://github.com/nesk">Johann Pardanaud</a> et des projets open source: <a href="https://pdf-lib.js.org/">PDF-LIB</a>, <a href="https://github.com/soldair/node-qrcode">qrcode</a> et <a href="https://andybrewer.github.io/mvp/">MVP.css</a>.</p>
+            <p><a class="bouton" href="https://github.com/louisdecharson/deplacement-covid">Code source</a></p>
+        </footer>
     </body>
 </html>
 
