@@ -1,3 +1,5 @@
+import {PDFDocument, StandardFonts} from 'pdf-lib';
+
 const $ = (...args) => document.querySelector(...args);
 const $$ = (...args) => [...document.querySelectorAll(...args)];
 let profil = {};
