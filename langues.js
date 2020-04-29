@@ -120,5 +120,4 @@ const langues = {
         "heure_sortie-label": "Hora da saída",
         "generer-attestation": "Gerar declaração"
     } 
-    
 };
