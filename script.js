@@ -29,8 +29,21 @@ function changeLangue(langue) {
 for (const el of document.getElementsByClassName('langue')) {
     el.addEventListener('click', () => changeLangue(el.id));
 }
+// Changement automatique de la langue
 if (localStorage.getItem('langue')) {
     changeLangue(localStorage.getItem('langue'));
+} else {
+    // Détection de la langue du navigateur
+    // https://stackoverflow.com/questions/1043339/javascript-for-detecting-browser-language-preference
+    let lang = window.navigator.languages ? window.navigator.languages[0] : null;
+    lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+    let shortLang = lang;
+    if (shortLang.indexOf('-') !== -1)
+        shortLang = shortLang.split('-')[0];
+    if (shortLang.indexOf('_') !== -1)
+        shortLang = shortLang.split('_')[0];
+    if (Object.keys(langues).indexOf(shortLang) > -1)
+        changeLangue(shortLang);
 }
 
 // Formattage Date
