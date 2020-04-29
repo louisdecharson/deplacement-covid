@@ -20,3 +20,5 @@ Le code css est inspiré de la version officielle du générateur d'attestation 
 Merci aux polyglottes:
 
 + Português 🇵🇹: [Rita Neves](https://github.com/ritanevesc) 
++ Español 🇪🇸: [Ricardo Sanher](https://www.instagram.com/ricardosanher/)
++ العربية 🇸🇦: Anas Fawzy
