@@ -15,6 +15,12 @@ function changeLangue(langue) {
             let idChamp = champ.id,
                 traductionChamp = langues[langue][idChamp];
             champ.innerHTML = traductionChamp;
+            // Change aussi le placeholder s'il existe et n'est pas une date
+            if (idChamp.includes('label') &&
+                champ.parentElement.nextElementSibling.hasAttribute('placeholder') &&
+                champ.parentElement.nextElementSibling.getAttribute('type') != 'date') {
+                champ.parentElement.nextElementSibling.setAttribute('placeholder', traductionChamp);
+            }
         }
     }
     localStorage.setItem('langue', langue);
@@ -26,7 +32,6 @@ for (const el of document.getElementsByClassName('langue')) {
 if (localStorage.getItem('langue')) {
     changeLangue(localStorage.getItem('langue'));
 }
-
 
 // Formattage Date
 function pad (str) {
