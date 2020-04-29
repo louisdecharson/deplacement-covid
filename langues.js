@@ -61,7 +61,7 @@ const langues = {
         "generer-attestation": "Generate certificate"
     },
     "es": {
-        "pourquoi": "Relleno esto cada vez que salgo. Es la ley para el coronavirus",
+        "pourquoi": "Acuerdo con la ley francesa, llenar este formulario cada vez que salgas de casa",
         "choix-langue": "Elija el idioma",
         "texte-champs-obligatoires": "Todos los campos son obligatorios",
         "prenom-label": "Nombre",
@@ -78,17 +78,17 @@ const langues = {
         "ville": "Ciudad",
         "code_postal-label": "Código postal",
         "code_postal": "Código postal",
-        "titre_motifs": "Elija la(s) razón(es) por la(s) que voy a salir:",
-        "texte-travail": "Ve a trabajar.",
-        "texte-courses": "Comprar algo de comida",
+        "titre_motifs": "Elija la(s) razón(es) de su salida:",
+        "texte-travail": "Trabajo",
+        "texte-courses": "Comprar comida",
         "texte-sante": "Ir a la farmacia o al médico",
         "texte-famille": "Cuidar de alguien que me necesita.",
-        "texte-sport": "Salir por un corto tiempo no muy lejos de mi casa. Sacando a mi perro.",
-        "texte-judiciaire": "Citación administrativa o judicial.",
-        "texte-missions": "Participar en misiones de interés general a petición de la autoridad administrativa.",
+        "texte-sport": "Salir por un corto tiempo cerca de mi casa. Sacar a mi perro a pasear.",
+        "texte-judiciaire": "Convocación administrativa o judicial.",
+        "texte-missions": "Participación comunitaria por parte del estado.",
         "date_sortie-label": "Fecha de salida",
         "heure_sortie-label": "Hora de salida",
-        "generer-attestation": "Generar certificados"
+        "generer-attestation": "Crear atestación"
     },
     "pt": {
         "pourquoi": "Preencho esta declaração cada vez que saio de casa para cumprir a lei durante o coronavírus.",

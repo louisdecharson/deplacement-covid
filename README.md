@@ -20,4 +20,3 @@ Le code css est inspiré de la version officielle du générateur d'attestation 
 Merci aux polyglottes:
 
 + Português 🇵🇹: [Rita Neves](https://github.com/ritanevesc) 
-
