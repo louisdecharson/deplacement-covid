@@ -82,7 +82,7 @@ const langues = {
         "texte-travail": "Trabajo",
         "texte-courses": "Comprar comida",
         "texte-sante": "Ir a la farmacia o al médico",
-        "texte-famille": "Cuidar de alguien que me necesita.",
+        "texte-famille": "Desplazamiento por un motivo de necesidad imperiosa, para la asistencia de personas vulnerables o el cuidado de niños",
         "texte-sport": "Salir por un corto tiempo cerca de mi casa. Sacar a mi perro a pasear.",
         "texte-judiciaire": "Convocación administrativa o judicial.",
         "texte-missions": "Participación comunitaria por parte del estado.",
