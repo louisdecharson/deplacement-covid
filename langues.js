@@ -149,5 +149,35 @@ const langues = {
         "date_sortie-label": "تاريخ الخروج",
         "heure_sortie-label": "ساعة الخروج",
         "generer-attestation": "إنشاء الشهادة"
-    }
+    },
+	"pl": {
+	"pourquoi": "Wypełniam ten formularz przed każdym wyjściem z domu. Jest to wymagane przez prawo związane z epidemią koronawirusa.",
+	"choix-langue": "Wybierz język",
+	"texte-champs-obligatoires": "Wszystkie pola wymagane",
+	"prenom-label": "Imię",
+	"prenom": "Imię",
+	"nom-label": "Nazwisko",
+	"nom": "Nazwisko",
+	"date_naissance-label": "Data urodzenia",
+	"date_naissance": "Data urodzenia",
+	"lieu_naissance-label": "Miejsce urodzenia",
+	"lieu_naissance": "Miejsce urodzenia",
+	"adresse-label": "Adres",
+	"adresse": "Adres",
+	"ville-label": "Miasto",
+	"ville": "Miasto",
+	"code_postal-label": "Kod pocztowy",
+	"code_postal": "Kod pocztowy",
+	"titre_motifs": "Wybierz powód wyjścia:",
+	"texte-travail": "Pójście do pracy",
+	"texte-courses": "Kupno jedzenia",
+	"texte-sante": "Wizyta w aptece lub u lekarza",
+	"texte-famille": "Pomoc osobie potrzebującej",
+	"texte-sport": "Wyjście na krótki okres czasu w okolicy domu; wyprowadzenie psa na spacer",
+	"texte-judiciaire": "Wezwanie administracyjne lub sądowe",
+	"texte-missions": "Udział w czynnościach w interesie publicznym na żądanie organu administracyjnego",
+	"date_sortie-label": "Data wyjścia",
+	"heure_sortie-label": "Godzina wyjścia",
+	"generer-attestation": "Wygeneruj certyfikat"
+	}
 };
