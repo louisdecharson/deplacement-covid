@@ -22,3 +22,4 @@ Merci aux polyglottes:
 + Português 🇵🇹: [Rita Neves](https://github.com/ritanevesc) 
 + Español 🇪🇸: [Ricardo Sanher](https://www.instagram.com/ricardosanher/)
 + العربية 🇸🇦: Anas Fawzy
++ Polski 🇵🇱: [Grzegorz Skrzypczynski](https://github.com/grzegorz-skrzypczynski)
